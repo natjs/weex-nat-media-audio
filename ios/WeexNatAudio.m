@@ -1,14 +1,14 @@
 //
-//  NatWeexAudio.m
+//  WeexNatAudio.m
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
 //
 
-#import "NatWeexAudio.h"
+#import "WeexNatAudio.h"
 #import "NatAudio.h"
 
-@implementation NatWeexAudio
+@implementation WeexNatAudio
 WX_EXPORT_METHOD(@selector(play::))
 WX_EXPORT_METHOD(@selector(pause:))
 WX_EXPORT_METHOD(@selector(stop:))

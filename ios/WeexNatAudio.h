@@ -1,5 +1,5 @@
 //
-//  NatWeexAudio.h
+//  WeexNatAudio.h
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
@@ -16,5 +16,5 @@
 
 @end
 
-@interface NatWeexAudio : NSObject<NatAudioPro>
+@interface WeexNatAudio : NSObject<NatAudioPro>
 @end
