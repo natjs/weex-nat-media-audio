@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>headers
+<?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-media-audio"
@@ -26,6 +26,23 @@
 
      <!-- android -->
      <platform name="android">
+        <config-file target="config.xml" parent="/*">
+             <feature name="MediaAudioModule">
+                 <param name="category" value="module" />
+                 <param name="android-package" value="com.nat.weex.MediaAudioModule" />
+                 <param name="api" value="nat/camera" />
+             </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+             <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+
+        <source-file
+             src="android/MediaAudioModule.java"
+            target-dir="src/com/alibaba/weex/nat/MediaAudioModule.java" />
+
+        <framework src="com.nat:media-audio:1.0.1" />
      </platform>
 
 </plugin>
