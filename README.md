@@ -1,12 +1,15 @@
 # nat-media-audio
 
+- [Documentation](http://natjs.com/#/#audio)
+- [Github](https://github.com/natjs/weex-nat-media-audio)
+
 ## Installation
 ```
 weexpack plugin add nat-media-audio
 ```
 
 ```
-npm install weex-nat --save
+npm install natjs --save
 ```
 
 ## Usage
@@ -15,7 +18,7 @@ Use in weex file (.we)
 
 ```html
 <script>
-import 'Nat' from 'weex-nat'
+import 'Nat' from 'natjs'
 
 // play
 Nat.audio.play('http://domain.com/audio')

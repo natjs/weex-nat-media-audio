@@ -2,13 +2,13 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-media-audio"
-    version="0.1.0">
+    version="0.1.2">
     <name>nat-media-audio</name>
-    <description></description>
+    <description>Nat.js module: Audio (play audio remote or local)</description>
     <license>MIT</license>
     <keywords>weex,plugin,nat,natjs,audio</keywords>
-    <repo>https://github.com/Natjs/weex-nat-media-audio.git</repo>
-    <issue>https://github.com/Natjs/weex-nat-media-audio/issues</issue>
+    <repo>https://github.com/natjs/weex-nat-media-audio.git</repo>
+    <issue>https://github.com/natjs/weex-nat-media-audio/issues</issue>
     
      <!-- ios -->
      <platform name="ios">
