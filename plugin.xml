@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-media-audio"
-    version="0.1.2">
+    version="0.1.5">
     <name>nat-media-audio</name>
     <description>Nat.js module: Audio (play audio remote or local)</description>
     <license>MIT</license>
@@ -12,37 +12,38 @@
     
      <!-- ios -->
      <platform name="ios">
-         <framework src="NatAudio" type="podspec" spec="" />
          <config-file target="WeexpluginConfig.xml" parent="/*">
-             <feature name="WXTestModule">
+             <feature name="WeexNatAudio">
                  <param name="category" value="module" />
                  <param name="ios-package" value="WeexNatAudio" />
                  <param name="api" value="nat/media/audio" />
              </feature>
          </config-file>
+
          <header-file src="ios/WeexNatAudio.h"/>
          <source-file src="ios/WeexNatAudio.m"/>
+         
+         <framework src="NatAudio" type="podspec" spec="0.0.3" />
      </platform>
 
      <!-- android -->
      <platform name="android">
         <config-file target="config.xml" parent="/*">
-             <feature name="MediaAudioModule">
+             <feature name="Audio">
                  <param name="category" value="module" />
-                 <param name="android-package" value="com.nat.weex.MediaAudioModule" />
-                 <param name="api" value="nat/camera" />
+                 <param name="android-package" value="com.nat.weex.Audio" />
+                 <param name="api" value="nat/media/audio" />
              </feature>
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/*">
              <uses-permission android:name="android.permission.INTERNET" />
+             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
 
-        <source-file
-             src="android/MediaAudioModule.java"
-            target-dir="src/com/alibaba/weex/nat/MediaAudioModule.java" />
+        <source-file src="android/Audio.java" target-dir="src/com/instapp/nat/media/audio" />
 
-        <framework src="com.nat:media-audio:1.0.1" />
+        <framework src="com.nat:media-audio:1.0.5" />
      </platform>
 
 </plugin>

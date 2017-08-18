@@ -1,19 +1,17 @@
 {
-  "name": "nat-media-audio",
-  "version": "0.1.2",
-  "description": "Nat.js module: Audio (play audio remote or local)",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Nat",
-    "media",
-    "audio",
-    "Weex",
-    "Plugin",
-    "module",
-    "handle"
-  ],
-  "author": "Acathur",
-  "license": "MIT"
+    "version": "0.1.5",
+    "platform": [
+        "ios",
+        "android"
+    ],
+    "description": "Nat.js module: Audio (play audio remote or local)",
+    "keywords": [
+        "weex",
+        "plugin",
+        "nat",
+        "natjs",
+        "audio"
+    ],
+    "license": "MIT",
+    "name": "nat-media-audio"
 }
