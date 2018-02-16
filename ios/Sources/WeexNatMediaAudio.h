@@ -1,5 +1,5 @@
 //
-//  WeexNatAudio.h
+//  WeexNatMediaAudio.h
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Instapp. All rights reserved.
@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WeexSDK.h>
 
-@protocol NatAudioPro <WXModuleProtocol>
+@protocol NatMediaAudioPro <WXModuleProtocol>
 
 - (void)play:(NSString *)path :(WXModuleCallback)callback;
 - (void)pause:(WXModuleCallback)callback;
@@ -16,5 +16,5 @@
 
 @end
 
-@interface WeexNatAudio : NSObject<NatAudioPro>
+@interface WeexNatMediaAudio : NSObject<NatMediaAudioPro>
 @end
